@@ -8,10 +8,10 @@
         <template v-if="type == 'input'">
             <b-row>
                 <b-col>
-                    <b-form-input v-model="text" placeholder="Enter your name"></b-form-input>
+                    <b-form-input v-model="zip" placeholder="Zip"></b-form-input>
                 </b-col>
                 <b-col>
-                    <b-form-input v-model="text" placeholder="Enter your name"></b-form-input>
+                    <b-form-input v-model="city" placeholder="City"></b-form-input>
                 </b-col>
             </b-row>  
         </template>
@@ -40,7 +40,10 @@ export default {
     title: String,
     color: String,
     icon: String,
-    type: String
+    type: String,
+    zip: String,
+    city: String,
+    accesorials_2: Array
   }
 }
 </script>
